@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YolFix Admin Hub</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="murojatlar.css">
+</head>
+
+<body>
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-top">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg style="width: 16px; height: 16px;" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                    </svg>
+
+                </div>
+                <div class="logo-title-group">
+                    <span class="logo-name">Yol<span>Fix</span></span>
+                    <span class="logo-tag">ADMIN</span>
+                </div>
+            </div>
+
+            <div class="menu-section-title">BOSHQARUV</div>
+
+            <nav class="nav-menu">
+                <a href="admin.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-layout-dashboard h-4 w-4" aria-hidden="true">
+                        <rect width="7" height="9" x="3" y="3" rx="1"></rect>
+                        <rect width="7" height="5" x="14" y="3" rx="1"></rect>
+                        <rect width="7" height="9" x="14" y="12" rx="1"></rect>
+                        <rect width="7" height="5" x="3" y="16" rx="1"></rect>
+                    </svg>
+                    <span>Bosh panel</span>
+                </a>
+                <a href="#" class="nav-item active">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-inbox h-4 w-4" aria-hidden="true">
+                        <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
+                        <path
+                            d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z">
+                        </path>
+                    </svg>
+                    <span>Murojaatlar</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-chart-column h-4 w-4" aria-hidden="true">
+                        <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
+                        <path d="M18 17V9"></path>
+                        <path d="M13 17V5"></path>
+                        <path d="M8 17v-3"></path>
+                    </svg>
+                    <span>Statistika</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-users h-4 w-4" aria-hidden="true">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                        <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                    </svg>
+                    <span>Xodimlar</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-settings h-4 w-4" aria-hidden="true">
+                        <path
+                            d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915">
+                        </path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                    <span>Sozlamalar</span>
+                </a>
+            </nav>
+        </div>
+
+        <div class="sidebar-bottom">
+            <div class="system-status">
+                <div class="green-dot"></div>
+                <div class="status-info">
+                    <h4>Tizim onlayn</h4>
+                    <p>So'nggi sinxronlash 2 daqiqa oldin</p>
+                </div>
+            </div>
+
+            <button class="logout-btn">
+                <i class="ri-logout-box-r-line"></i>
+                <a style="color: inherit; text-decoration: none; font-weight: 500; font-size: 13px;"
+                    href="index.html">Chiqish</a>
+            </button>
+        </div>
+    </aside>
+    <main class="main-content">
+        <header class="header">
+            <div class="header-left">
+                <button class="mobile-toggle" id="menu-toggle" aria-label="Menu Toggle">
+                    <i class="ri-menu-line"></i>
+                </button>
+                <div class="search-box">
+                    <i class="ri-search-line"></i>
+                    <input type="text" placeholder="Murojaat ID, manzil yoki xodim qidiring...">
+                </div>
+            </div>
+
+            <div class="header-right">
+                <button class="notification-btn" aria-label="Notifications">
+                    <i class="ri-notification-3-line"></i>
+                    <span class="badge-dot"></span>
+                </button>
+
+                <div class="user-profile">
+                    <div class="avatar">AT</div>
+                    <div class="user-details">
+                        <span class="user-name">Alisher T.</span>
+                        <span class="user-role">Super Admin</span>
+                    </div>
+                    <i class="ri-arrow-down-s-line"></i>
+                </div>
+            </div>
+        </header>
+
+        <div class="div flex-1 px-4 md:px-8 py-6 md:py-8">
+            <div class="mb-6 md:mb-[32px]">
+                <h1 class="font-bold tracking-tight">Murojaatlar</h1>
+                <p class="mt-1 text-sm text-muted-foreground">Jami 42 ta murojaat topildi</p>
+            </div>
+
+            <div class="rounded-2xl border border-border bg-card p-4 mb-6 shadow-sm">
+                <div class="flex flex-wrap items-center gap-3">
+                    <div class="relative flex-1 min-w-[220px]"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-search absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground"
+                            aria-hidden="true">
+                            <path d="m21 21-4.34-4.34"></path>
+                            <circle cx="11" cy="11" r="8"></circle>
+                        </svg><input placeholder="ID yoki manzil bo'yicha qidirish..."
+                            class="w-full h-10 rounded-lg border border-input bg-input/40 pl-10 pr-3 text-sm focus:outline-none focus:ring-2 focus:ring-ring/50"
+                            value=""></div><select class="h-10 rounded-lg border border-input bg-input/40 px-3 text-sm">
+                        <option value="all">Barcha holatlar</option>
+                        <option value="yangi">Yangi</option>
+                        <option value="korilmoqda">Ko'rilmoqda</option>
+                        <option value="jarayonda">Jarayonda</option>
+                        <option value="hal_qilindi">Hal qilindi</option>
+                        <option value="inobatga_olinmadi">Inobatga olinmadi</option>
+                    </select><select class="h-10 rounded-lg border border-input bg-input/40 px-3 text-sm">
+                        <option value="all">Barcha turlar</option>
+                        <option value="chuqur">Chuqur</option>
+                        <option value="notekislik">Notekislik</option>
+                        <option value="singan_asfalt">Singan asfalt</option>
+                        <option value="suv_toplanishi">Suv to'planishi</option>
+                        <option value="chegara_toshi">Chegara toshi</option>
+                    </select><button
+                        class="h-10 px-4 rounded-lg border border-input hover:bg-accent inline-flex items-center gap-2 text-sm"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-funnel h-4 w-4" aria-hidden="true">
+                            <path
+                                d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z">
+                            </path>
+                        </svg> Sana oralig'i</button><button
+                        class="h-10 px-4 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 inline-flex items-center gap-2 text-sm font-medium"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-download h-4 w-4" aria-hidden="true">
+                            <path d="M12 15V3"></path>
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <path d="m7 10 5 5 5-5"></path>
+                        </svg> Eksport</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('sidebar-overlay');
+
+        function toggleMenu() {
+            sidebar.classList.toggle('active');
+            overlay.classList.toggle('active');
+        }
+
+        menuToggle.addEventListener('click', toggleMenu);
+        overlay.addEventListener('click', toggleMenu);
+    </script>
+</body>
+</body>
+
+</html>

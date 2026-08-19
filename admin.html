@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YolFix Admin Hub</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./admin.css">
+</head>
+
+<body>
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-top">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg style="width: 16px; height: 16px;" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                    </svg>
+
+                </div>
+                <div class="logo-title-group">
+                    <span class="logo-name">Yol<span>Fix</span></span>
+                    <span class="logo-tag">ADMIN</span>
+                </div>
+            </div>
+
+            <div class="menu-section-title">BOSHQARUV</div>
+
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-layout-dashboard h-4 w-4" aria-hidden="true">
+                        <rect width="7" height="9" x="3" y="3" rx="1"></rect>
+                        <rect width="7" height="5" x="14" y="3" rx="1"></rect>
+                        <rect width="7" height="9" x="14" y="12" rx="1"></rect>
+                        <rect width="7" height="5" x="3" y="16" rx="1"></rect>
+                    </svg>
+                    <span>Bosh panel</span>
+                </a>
+                <a href="murojatlar.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-inbox h-4 w-4" aria-hidden="true">
+                        <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
+                        <path
+                            d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z">
+                        </path>
+                    </svg>
+                    <span>Murojaatlar</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-chart-column h-4 w-4" aria-hidden="true">
+                        <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
+                        <path d="M18 17V9"></path>
+                        <path d="M13 17V5"></path>
+                        <path d="M8 17v-3"></path>
+                    </svg>
+                    <span>Statistika</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-users h-4 w-4" aria-hidden="true">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                        <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                    </svg>
+                    <span>Xodimlar</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-settings h-4 w-4" aria-hidden="true">
+                        <path
+                            d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915">
+                        </path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                    <span>Sozlamalar</span>
+                </a>
+            </nav>
+        </div>
+
+        <div class="sidebar-bottom">
+            <div class="system-status">
+                <div class="green-dot"></div>
+                <div class="status-info">
+                    <h4>Tizim onlayn</h4>
+                    <p>So'nggi sinxronlash 2 daqiqa oldin</p>
+                </div>
+            </div>
+
+            <button class="logout-btn">
+                <i class="ri-logout-box-r-line"></i>
+                <a style="color: inherit; text-decoration: none; font-weight: 500; font-size: 13px;"
+                    href="index.html">Chiqish</a>
+            </button>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="header">
+            <div class="header-left">
+                <button class="mobile-toggle" id="menu-toggle" aria-label="Menu Toggle">
+                    <i class="ri-menu-line"></i>
+                </button>
+                <div class="search-box">
+                    <i class="ri-search-line"></i>
+                    <input type="text" placeholder="Murojaat ID, manzil yoki xodim qidiring...">
+                </div>
+            </div>
+
+            <div class="header-right">
+                <button class="notification-btn" aria-label="Notifications">
+                    <i class="ri-notification-3-line"></i>
+                    <span class="badge-dot"></span>
+                </button>
+
+                <div class="user-profile">
+                    <div class="avatar">AT</div>
+                    <div class="user-details">
+                        <span class="user-name">Alisher T.</span>
+                        <span class="user-role">Super Admin</span>
+                    </div>
+                    <i class="ri-arrow-down-s-line"></i>
+                </div>
+            </div>
+        </header>
+
+        <div class="dashboard-container">
+            <div class="page-header">
+                <h1>Bosh panel</h1>
+                <p>Real vaqt monitoringi va so'nggi faoliyat</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="card-header">
+                        <div class="card-icon orange">
+                            <i class="ri-inbox-archive-fill"></i>
+                        </div>
+                        <span class="stat-change positive">↗ +12.4%</span>
+                    </div>
+                    <div class="stat-value">1,240+</div>
+                    <div class="stat-label">Jami murojaatlar</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="card-header">
+                        <div class="card-icon green">
+                            <i class="ri-checkbox-circle-line"></i>
+                        </div>
+                        <span class="stat-change positive">↗ +8.1%</span>
+                    </div>
+                    <div class="stat-value">240+</div>
+                    <div class="stat-label">Hal etilgan</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="card-header">
+                        <div class="card-icon yellow">
+                            <i class="ri-time-line"></i>
+                        </div>
+                        <span class="stat-change neutral">↗ 48s javob vaqti</span>
+                    </div>
+                    <div class="stat-value">68</div>
+                    <div class="stat-label">Jarayonda</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="card-header">
+                        <div class="card-icon dark">
+                            <i class="ri-close-circle-line"></i>
+                        </div>
+                        <span class="stat-change negative">↗ -2.3%</span>
+                    </div>
+                    <div class="stat-value">24</div>
+                    <div class="stat-label">Inobatga olinmadi</div>
+                </div>
+            </div>
+
+            <div class="analytics-grid">
+                <div class="content-card chart-card">
+                    <div class="card-top-bar">
+                        <div>
+                            <h3>Oylik murojaatlar dinamikasi</h3>
+                            <p class="sub-text">2026-yil bo'yicha</p>
+                        </div>
+                        <div class="filter-group">
+                            <button class="filter-btn active">Yil</button>
+                            <button class="filter-btn">Chorak</button>
+                            <button class="filter-btn">Oy</button>
+                        </div>
+                    </div>
+
+                    <div class="bar-chart">
+                        <div class="chart-col">
+                            <div class="bar bar-20"></div><span>Yan</span>
+                        </div>
+                        <div class="chart-col">
+                            <div class="bar bar-25"></div><span>Fev</span>
+                        </div>
+                        <div class="chart-col">
+                            <div class="bar bar-45"></div><span>Mar</span>
+                        </div>
+                        <div class="chart-col">
+                            <div class="bar bar-60"></div><span>Apr</span>
+                        </div>
+                        <div class="chart-col">
+                            <div class="bar bar-80"></div><span>May</span>
+                        </div>
+                        <div class="chart-col">
+                            <div class="bar bar-100"></div><span>Iyn</span>
+                        </div>
+                        <div class="chart-col">
+                            <div class="bar bar-90"></div><span>Iyl</span>
+                        </div>
+                        <div class="chart-col">
+                            <div class="bar bar-75"></div><span>Avg</span>
+                        </div>
+                        <div class="chart-col">
+                            <div class="bar bar-55"></div><span>Sen</span>
+                        </div>
+                        <div class="chart-col">
+                            <div class="bar bar-40"></div><span>Okt</span>
+                        </div>
+                        <div class="chart-col">
+                            <div class="bar bar-30"></div><span>Noy</span>
+                        </div>
+                        <div class="chart-col">
+                            <div class="bar bar-25"></div><span>Dek</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card progress-card">
+                    <div class="card-top-bar">
+                        <div>
+                            <h3>Muammo turlari</h3>
+                            <p class="sub-text">Taqsimot</p>
+                        </div>
+                    </div>
+
+                    <div class="progress-list">
+                        <div class="progress-item">
+                            <div class="progress-info">
+                                <span class="label">Chuqur</span>
+                                <span class="percent">21%</span>
+                            </div>
+                            <div class="track">
+                                <div class="fill orange-fill" style="width: 21%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-item">
+                            <div class="progress-info">
+                                <span class="label">Notekislik</span>
+                                <span class="percent">21%</span>
+                            </div>
+                            <div class="track">
+                                <div class="fill green-fill" style="width: 21%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-item">
+                            <div class="progress-info">
+                                <span class="label">Singan asfalt</span>
+                                <span class="percent">19%</span>
+                            </div>
+                            <div class="track">
+                                <div class="fill yellow-fill" style="width: 19%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-item">
+                            <div class="progress-info">
+                                <span class="label">Suv To'planishi</span>
+                                <span class="percent">19%</span>
+                            </div>
+                            <div class="track">
+                                <div class="fill blue-fill" style="width: 19%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-item">
+                            <div class="progress-info">
+                                <span class="label">Chegara toshi</span>
+                                <span class="percent">19%</span>
+                            </div>
+                            <div class="track">
+                                <div class="fill red-fill" style="width: 19%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card table-card">
+                <div class="card-top-bar">
+                    <div>
+                        <h3>So'nggi murojaatlar</h3>
+                        <p class="sub-text">Oxirgi kelib tushgan xabarlar</p>
+                    </div>
+                    <a href="#" class="view-all-link">Barchasi <i class="ri-arrow-right-up-line"></i></a>
+                </div>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Muammo</th>
+                                <th>Manzil</th>
+                                <th>Sana</th>
+                                <th>Holat</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="id-col">YF-1200</td>
+                                <td class="issue-col">Chuqur</td>
+                                <td class="address-col">Amir Temur ko'chasi, 10-uy</td>
+                                <td class="date-col">M07 25</td>
+                                <td><span class="status-pill status-new">• Yangi</span></td>
+                            </tr>
+                            <tr>
+                                <td class="id-col">YF-1201</td>
+                                <td class="issue-col">Notekislik</td>
+                                <td class="address-col">Bunyodkor shoh ko'chasi, 11-uy</td>
+                                <td class="date-col">M07 24</td>
+                                <td><span class="status-pill status-review">• Ko'rilmoqda</span></td>
+                            </tr>
+                            <tr>
+                                <td class="id-col">YF-1202</td>
+                                <td class="issue-col">Singan asfalt</td>
+                                <td class="address-col">Mustaqillik ko'chasi, 12-uy</td>
+                                <td class="date-col">M07 23</td>
+                                <td><span class="status-pill status-process">• Jarayonda</span></td>
+                            </tr>
+                            <tr>
+                                <td class="id-col">YF-1203</td>
+                                <td class="issue-col">Suv to'planishi</td>
+                                <td class="address-col">Navoiy ko'chasi, 13-uy</td>
+                                <td class="date-col">M07 22</td>
+                                <td><span class="status-pill status-resolved">• Hal qilindi</span></td>
+                            </tr>
+                            <tr>
+                                <td class="id-col">YF-1204</td>
+                                <td class="issue-col">Chegara toshi</td>
+                                <td class="address-col">Shota Rustaveli, 14-uy</td>
+                                <td class="date-col">M07 21</td>
+                                <td><span class="status-pill status-ignored">• Inobatga olinmadi</span></td>
+                            </tr>
+                            <tr>
+                                <td class="id-col">YF-1205</td>
+                                <td class="issue-col">Chuqur</td>
+                                <td class="address-col">Nukus ko'chasi, 15-uy</td>
+                                <td class="date-col">M07 20</td>
+                                <td><span class="status-pill status-new">• Yangi</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('sidebar-overlay');
+
+        function toggleMenu() {
+            sidebar.classList.toggle('active');
+            overlay.classList.toggle('active');
+        }
+
+        menuToggle.addEventListener('click', toggleMenu);
+        overlay.addEventListener('click', toggleMenu);
+    </script>
+</body>
+
+</html>
