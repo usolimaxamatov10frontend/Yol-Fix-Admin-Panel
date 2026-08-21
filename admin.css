@@ -365,7 +365,7 @@ body {
     align-items: center;
     padding: 0 28px;
     border-bottom: 1px solid var(--border-color);
-    background: var(--body-bg);
+    background: red;
     position: sticky;
     top: 0;
     z-index: 100;
