@@ -13,7 +13,7 @@
     --muted-foreground: oklch(68% .01 60);
     --border: oklch(28% .006 60);
     --input: oklch(26% .006 60);
-    
+
     --font-sans: "Inter", sans-serif;
     --font-display: "Space Grotesk", sans-serif;
 }
@@ -31,9 +31,9 @@ body {
     color: var(--foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
-    background: 
-        radial-gradient(1200px 600px at 80% -10%, oklch(68% .19 45 / .12), transparent 60%), 
-        radial-gradient(800px 500px at 0% 100%, oklch(68% .19 45 / .08), transparent 60%), 
+    background:
+        radial-gradient(1200px 600px at 80% -10%, oklch(68% .19 45 / .12), transparent 60%),
+        radial-gradient(800px 500px at 0% 100%, oklch(68% .19 45 / .08), transparent 60%),
         var(--background);
     min-height: 100vh;
     display: flex;
@@ -80,7 +80,8 @@ body {
     --sidebar-ring: oklch(68% .19 45);
 }
 
-:root, :host {
+:root,
+:host {
     --font-sans: "Inter", sans-serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --color-black: #000;
@@ -370,7 +371,8 @@ body {
     align-items: center;
     padding: 0 28px;
     border-bottom: 1px solid var(--border-color);
-    background: var(--body-bg);
+    background: #0808089f;
+    backdrop-filter: blur(10px) saturate(180%);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -512,7 +514,7 @@ body {
 /* ========================================================
    4. DASHBOARD CONTENT & CARDS
 ======================================================== */
-@media (width >= 48rem) {
+@media (width >=48rem) {
     .md\:mb-8 {
         margin-bottom: calc(var(--spacing) * 8);
     }
@@ -621,19 +623,28 @@ p {
     unicode-bidi: isolate;
 }
 
-@media (width >= 48rem) {
+@media (width >=48rem) {
     .md\:text-3xl {
         font-size: var(--text-3xl);
         line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: var(--font-display);
     letter-spacing: -.02em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-size: inherit;
     font-weight: inherit;
 }
@@ -652,7 +663,8 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-html, :host {
+html,
+:host {
     -webkit-text-size-adjust: 100%;
     tab-size: 4;
     line-height: 1.5;
@@ -660,4 +672,19 @@ html, :host {
     font-feature-settings: var(--default-font-feature-settings, normal);
     font-variation-settings: var(--default-font-variation-settings, normal);
     -webkit-tap-highlight-color: transparent;
+}
+
+.filter {
+    margin-bottom: calc(var(--spacing) * 6);
+    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, #0000001a), 0 1px 2px -1px var(--tw-shadow-color, #0000001a);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    background-color: var(--card-bg);
+}
+
+.filter-item {
+    background-color: color-mix(in oklab, var(--input) 40%, transparent);
+    padding-right: calc(var(--spacing) * 3);
+    padding-left: calc(var(--spacing) * 10);
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
 }

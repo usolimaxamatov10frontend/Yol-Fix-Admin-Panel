@@ -1,22 +1,44 @@
 /* ========================================================
    1. GLOBAL VARIABLES & UNIFIED STYLES
 ======================================================== */
-* {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700;900&display=swap');
+
+:root {
+    --radius: .75rem;
+    --background: oklch(16% .005 60);
+    --foreground: oklch(97% .005 60);
+    --card: oklch(20% .006 60);
+    --card-foreground: oklch(97% .005 60);
+    --primary: oklch(68% .19 45);
+    --muted-foreground: oklch(68% .01 60);
+    --border: oklch(28% .006 60);
+    --input: oklch(26% .006 60);
+
+    --font-sans: "Inter", sans-serif;
+    --font-display: "Space Grotesk", sans-serif;
+}
+
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 body {
-  font-family: "Inter", system-ui, sans-serif;
-  background:
-    radial-gradient(1200px 600px at 80% -10%, rgba(249, 123, 52, 0.12), transparent 60%),
-    radial-gradient(800px 500px at 0% 100%, rgba(249, 123, 52, 0.08), transparent 60%),
-    var(--bg);
-  color: var(--fg);
-  -webkit-font-smoothing: antialiased;
-  min-height: 100vh;
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    background:
+        radial-gradient(1200px 600px at 80% -10%, oklch(68% .19 45 / .12), transparent 60%),
+        radial-gradient(800px 500px at 0% 100%, oklch(68% .19 45 / .08), transparent 60%),
+        var(--background);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @font-face {
@@ -365,7 +387,8 @@ body {
     align-items: center;
     padding: 0 28px;
     border-bottom: 1px solid var(--border-color);
-    background: rgba(255, 255, 255, 0.04);
+    background: #0808089f;
+    backdrop-filter: blur(10px) saturate(180%);
     position: sticky;
     top: 0;
     z-index: 100;
