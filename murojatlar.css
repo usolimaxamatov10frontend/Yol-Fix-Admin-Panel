@@ -688,3 +688,9 @@ html,
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
 }
+
+.filter-btn{
+    background-color: var(--primary-orange);
+    color: var(--primary-foreground);
+    hover: var(--primary/90);
+}
