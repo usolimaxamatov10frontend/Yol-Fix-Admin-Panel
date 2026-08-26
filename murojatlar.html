@@ -61,7 +61,7 @@
                     </svg>
                     <span>Murojaatlar</span>
                 </a>
-                <a href="#" class="nav-item">
+                <a href="stat.html" class="nav-item">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-chart-column h-4 w-4" aria-hidden="true">
@@ -113,13 +113,13 @@
             </button>
         </div>
     </aside>
-    <main class="main-content">
+    <main class="main-content1">
         <header class="header">
             <div class="header-left">
                 <button class="mobile-toggle" id="menu-toggle" aria-label="Menu Toggle">
                     <i class="ri-menu-line"></i>
                 </button>
-                <div class="search-box">
+                <div class="search-box active">
                     <i class="ri-search-line"></i>
                     <input type="text" placeholder="Murojaat ID, manzil yoki xodim qidiring...">
                 </div>
@@ -183,7 +183,7 @@
                                 d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z">
                             </path>
                         </svg> Sana oralig'i</button><button
-                        class="filter-btn h-10 px-4 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 inline-flex items-center gap-2 text-sm font-medium"><svg
+                        class="filter-btn h-10 px-4 rounded-lg text-primary-foreground hover:bg-primary/90 inline-flex items-center gap-2 text-sm font-medium"><svg
                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-download h-4 w-4" aria-hidden="true">
@@ -191,6 +191,591 @@
                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                             <path d="m7 10 5 5 5-5"></path>
                         </svg> Eksport</button>
+                </div>
+            </div>
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Rasm</th>
+                            <th>Muammo turi</th>
+                            <th>Manzil</th>
+                            <th>Tuman</th>
+                            <th>Sana</th>
+                            <th>Holat</th>
+                            <th>Amal</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <!-- 1 -->
+                        <tr>
+                            <td class="id">YF-1200</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/pothole,road?lock=1"
+                                    alt="Yo'l muammosi"></td>
+                            <td class="problem">Chuqur</td>
+                            <td class="address">Amir Temur ko'chasi, 10-uy</td>
+                            <td>Chilonzor</td>
+                            <td>25-iyl</td>
+                            <td><span class="status new">Yangi</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 2 -->
+                        <tr>
+                            <td class="id">YF-1201</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/pothole,road?lock=2"
+                                    alt="Notekis yo'l"></td>
+                            <td class="problem">Notekislik</td>
+                            <td class="address">Bunyodkor shoh ko'chasi, 11-uy</td>
+                            <td>Yunusobod</td>
+                            <td>24-iyl</td>
+                            <td><span class="status viewing">Ko'rilmoqda</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 3 -->
+                        <tr>
+                            <td class="id">YF-1202</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/broken,asphalt,road?lock=3"
+                                    alt="Singan asfalt"></td>
+                            <td class="problem">Singan asfalt</td>
+                            <td class="address">Mustaqillik ko'chasi, 12-uy</td>
+                            <td>Mirzo Ulug'bek</td>
+                            <td>23-iyl</td>
+                            <td><span class="status process">Jarayonda</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 4 -->
+                        <tr>
+                            <td class="id">YF-1203</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/pothole,water,road?lock=4"
+                                    alt="Suv to'planishi"></td>
+                            <td class="problem">Suv to'planishi</td>
+                            <td class="address">Navoiy ko'chasi, 13-uy</td>
+                            <td>Shayxontohur</td>
+                            <td>22-iyl</td>
+                            <td><span class="status done">Hal qilindi</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 5 -->
+                        <tr>
+                            <td class="id">YF-1204</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/road,curb?lock=5"
+                                    alt="Chegara toshi"></td>
+                            <td class="problem">Chegara toshi</td>
+                            <td class="address">Shota Rustaveli, 14-uy</td>
+                            <td>Yakkasaroy</td>
+                            <td>21-iyl</td>
+                            <td><span class="status rejected">Inobatga olinmadi</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 6 -->
+                        <tr>
+                            <td class="id">YF-1205</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/pothole,street?lock=6"
+                                    alt="Chuqur"></td>
+                            <td class="problem">Chuqur</td>
+                            <td class="address">Nukus ko'chasi, 15-uy</td>
+                            <td>Olmazor</td>
+                            <td>20-iyl</td>
+                            <td><span class="status new">Yangi</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 7 -->
+                        <tr>
+                            <td class="id">YF-1206</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/cracked,road?lock=7"
+                                    alt="Notekislik"></td>
+                            <td class="problem">Notekislik</td>
+                            <td class="address">Amir Temur ko'chasi, 16-uy</td>
+                            <td>Sergeli</td>
+                            <td>19-iyl</td>
+                            <td><span class="status viewing">Ko'rilmoqda</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 8 -->
+                        <tr>
+                            <td class="id">YF-1207</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/damaged,asphalt?lock=8"
+                                    alt="Singan asfalt"></td>
+                            <td class="problem">Singan asfalt</td>
+                            <td class="address">Bunyodkor shoh ko'chasi, 17-uy</td>
+                            <td>Yunusobod</td>
+                            <td>18-iyl</td>
+                            <td><span class="status process">Jarayonda</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 9 -->
+                        <tr>
+                            <td class="id">YF-1208</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/flooded,road?lock=9"
+                                    alt="Suv to'planishi"></td>
+                            <td class="problem">Suv to'planishi</td>
+                            <td class="address">Mustaqillik ko'chasi, 18-uy</td>
+                            <td>Chilonzor</td>
+                            <td>17-iyl</td>
+                            <td><span class="status done">Hal qilindi</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 10 -->
+                        <tr>
+                            <td class="id">YF-1209</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/road,damage?lock=10"
+                                    alt="Chegara toshi"></td>
+                            <td class="problem">Chegara toshi</td>
+                            <td class="address">Navoiy ko'chasi, 19-uy</td>
+                            <td>Mirzo Ulug'bek</td>
+                            <td>16-iyl</td>
+                            <td><span class="status rejected">Inobatga olinmadi</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 11 -->
+                        <tr>
+                            <td class="id">YF-1210</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/pothole,street?lock=11"
+                                    alt="Chuqur"></td>
+                            <td class="problem">Chuqur</td>
+                            <td class="address">Beruniy ko'chasi, 20-uy</td>
+                            <td>Chilonzor</td>
+                            <td>15-iyl</td>
+                            <td><span class="status new">Yangi</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 12 -->
+                        <tr>
+                            <td class="id">YF-1211</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/cracked,asphalt?lock=12"
+                                    alt="Notekislik"></td>
+                            <td class="problem">Notekislik</td>
+                            <td class="address">Amir Temur ko'chasi, 21-uy</td>
+                            <td>Yunusobod</td>
+                            <td>14-iyl</td>
+                            <td><span class="status viewing">Ko'rilmoqda</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 13 -->
+                        <tr>
+                            <td class="id">YF-1212</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/broken,road?lock=13"
+                                    alt="Singan asfalt"></td>
+                            <td class="problem">Singan asfalt</td>
+                            <td class="address">Shota Rustaveli, 22-uy</td>
+                            <td>Yakkasaroy</td>
+                            <td>13-iyl</td>
+                            <td><span class="status process">Jarayonda</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 14 -->
+                        <tr>
+                            <td class="id">YF-1213</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/water,road?lock=14"
+                                    alt="Suv to'planishi"></td>
+                            <td class="problem">Suv to'planishi</td>
+                            <td class="address">Nukus ko'chasi, 23-uy</td>
+                            <td>Olmazor</td>
+                            <td>12-iyl</td>
+                            <td><span class="status done">Hal qilindi</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 15 -->
+                        <tr>
+                            <td class="id">YF-1214</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/curb,road?lock=15"
+                                    alt="Chegara toshi"></td>
+                            <td class="problem">Chegara toshi</td>
+                            <td class="address">Bobur ko'chasi, 24-uy</td>
+                            <td>Sergeli</td>
+                            <td>11-iyl</td>
+                            <td><span class="status rejected">Inobatga olinmadi</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 16 -->
+                        <tr>
+                            <td class="id">YF-1215</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/pothole,asphalt?lock=16"
+                                    alt="Chuqur"></td>
+                            <td class="problem">Chuqur</td>
+                            <td class="address">Afrosiyob ko'chasi, 25-uy</td>
+                            <td>Chilonzor</td>
+                            <td>10-iyl</td>
+                            <td><span class="status new">Yangi</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 17 -->
+                        <tr>
+                            <td class="id">YF-1216</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/uneven,road?lock=17"
+                                    alt="Notekislik"></td>
+                            <td class="problem">Notekislik</td>
+                            <td class="address">Muqimiy ko'chasi, 26-uy</td>
+                            <td>Yunusobod</td>
+                            <td>9-iyl</td>
+                            <td><span class="status viewing">Ko'rilmoqda</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 18 -->
+                        <tr>
+                            <td class="id">YF-1217</td>
+                            <td><img class="report-img"
+                                    src="https://loremflickr.com/120/80/damaged,asphalt,street?lock=18"
+                                    alt="Singan asfalt"></td>
+                            <td class="problem">Singan asfalt</td>
+                            <td class="address">Chilonzor ko'chasi, 27-uy</td>
+                            <td>Mirzo Ulug'bek</td>
+                            <td>8-iyl</td>
+                            <td><span class="status process">Jarayonda</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 19 -->
+                        <tr>
+                            <td class="id">YF-1218</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/flood,road?lock=19"
+                                    alt="Suv to'planishi"></td>
+                            <td class="problem">Suv to'planishi</td>
+                            <td class="address">Qatortol ko'chasi, 28-uy</td>
+                            <td>Shayxontohur</td>
+                            <td>7-iyl</td>
+                            <td><span class="status done">Hal qilindi</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 20 -->
+                        <tr>
+                            <td class="id">YF-1219</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/street,curb?lock=20"
+                                    alt="Chegara toshi"></td>
+                            <td class="problem">Chegara toshi</td>
+                            <td class="address">Farhod ko'chasi, 29-uy</td>
+                            <td>Yakkasaroy</td>
+                            <td>6-iyl</td>
+                            <td><span class="status rejected">Inobatga olinmadi</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 21 -->
+                        <tr>
+                            <td class="id">YF-1220</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/pothole,road?lock=21"
+                                    alt="Chuqur"></td>
+                            <td class="problem">Chuqur</td>
+                            <td class="address">Samarqand Darvoza, 30-uy</td>
+                            <td>Olmazor</td>
+                            <td>5-iyl</td>
+                            <td><span class="status new">Yangi</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 22 -->
+                        <tr>
+                            <td class="id">YF-1221</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/cracked,street?lock=22"
+                                    alt="Notekislik"></td>
+                            <td class="problem">Notekislik</td>
+                            <td class="address">Buyuk Ipak Yo'li, 31-uy</td>
+                            <td>Sergeli</td>
+                            <td>4-iyl</td>
+                            <td><span class="status viewing">Ko'rilmoqda</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 23 -->
+                        <tr>
+                            <td class="id">YF-1222</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/broken,asphalt,road?lock=23"
+                                    alt="Singan asfalt"></td>
+                            <td class="problem">Singan asfalt</td>
+                            <td class="address">Shahrisabz ko'chasi, 32-uy</td>
+                            <td>Yunusobod</td>
+                            <td>3-iyl</td>
+                            <td><span class="status process">Jarayonda</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 24 -->
+                        <tr>
+                            <td class="id">YF-1223</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/water,pothole?lock=24"
+                                    alt="Suv to'planishi"></td>
+                            <td class="problem">Suv to'planishi</td>
+                            <td class="address">Farg'ona yo'li, 33-uy</td>
+                            <td>Chilonzor</td>
+                            <td>2-iyl</td>
+                            <td><span class="status done">Hal qilindi</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 25 -->
+                        <tr>
+                            <td class="id">YF-1224</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/road,curb,damage?lock=25"
+                                    alt="Chegara toshi"></td>
+                            <td class="problem">Chegara toshi</td>
+                            <td class="address">Mirobod ko'chasi, 34-uy</td>
+                            <td>Mirzo Ulug'bek</td>
+                            <td>1-iyl</td>
+                            <td><span class="status rejected">Inobatga olinmadi</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 26 -->
+                        <tr>
+                            <td class="id">YF-1225</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/pothole,asphalt?lock=26"
+                                    alt="Chuqur"></td>
+                            <td class="problem">Chuqur</td>
+                            <td class="address">Oybek ko'chasi, 35-uy</td>
+                            <td>Yakkasaroy</td>
+                            <td>30-iyun</td>
+                            <td><span class="status new">Yangi</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 27 -->
+                        <tr>
+                            <td class="id">YF-1226</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/rough,road?lock=27"
+                                    alt="Notekislik"></td>
+                            <td class="problem">Notekislik</td>
+                            <td class="address">Shota Rustaveli, 36-uy</td>
+                            <td>Chilonzor</td>
+                            <td>29-iyun</td>
+                            <td><span class="status viewing">Ko'rilmoqda</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 28 -->
+                        <tr>
+                            <td class="id">YF-1227</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/damaged,road?lock=28"
+                                    alt="Singan asfalt"></td>
+                            <td class="problem">Singan asfalt</td>
+                            <td class="address">Bunyodkor ko'chasi, 37-uy</td>
+                            <td>Olmazor</td>
+                            <td>28-iyun</td>
+                            <td><span class="status process">Jarayonda</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 29 -->
+                        <tr>
+                            <td class="id">YF-1228</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/rain,road,puddle?lock=29"
+                                    alt="Suv to'planishi"></td>
+                            <td class="problem">Suv to'planishi</td>
+                            <td class="address">Navoiy ko'chasi, 38-uy</td>
+                            <td>Sergeli</td>
+                            <td>27-iyun</td>
+                            <td><span class="status done">Hal qilindi</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 30 -->
+                        <tr>
+                            <td class="id">YF-1229</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/curb,street?lock=30"
+                                    alt="Chegara toshi"></td>
+                            <td class="problem">Chegara toshi</td>
+                            <td class="address">Beruniy ko'chasi, 39-uy</td>
+                            <td>Yunusobod</td>
+                            <td>26-iyun</td>
+                            <td><span class="status rejected">Inobatga olinmadi</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 31 -->
+                        <tr>
+                            <td class="id">YF-1230</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/pothole,street?lock=31"
+                                    alt="Chuqur"></td>
+                            <td class="problem">Chuqur</td>
+                            <td class="address">Amir Temur ko'chasi, 40-uy</td>
+                            <td>Chilonzor</td>
+                            <td>25-iyun</td>
+                            <td><span class="status new">Yangi</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 32 -->
+                        <tr>
+                            <td class="id">YF-1231</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/uneven,asphalt?lock=32"
+                                    alt="Notekislik"></td>
+                            <td class="problem">Notekislik</td>
+                            <td class="address">Muqimiy ko'chasi, 41-uy</td>
+                            <td>Mirzo Ulug'bek</td>
+                            <td>24-iyun</td>
+                            <td><span class="status viewing">Ko'rilmoqda</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 33 -->
+                        <tr>
+                            <td class="id">YF-1232</td>
+                            <td><img class="report-img"
+                                    src="https://loremflickr.com/120/80/broken,street,asphalt?lock=33"
+                                    alt="Singan asfalt"></td>
+                            <td class="problem">Singan asfalt</td>
+                            <td class="address">Qatortol ko'chasi, 42-uy</td>
+                            <td>Shayxontohur</td>
+                            <td>23-iyun</td>
+                            <td><span class="status process">Jarayonda</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 34 -->
+                        <tr>
+                            <td class="id">YF-1233</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/puddle,road?lock=34"
+                                    alt="Suv to'planishi"></td>
+                            <td class="problem">Suv to'planishi</td>
+                            <td class="address">Nukus ko'chasi, 43-uy</td>
+                            <td>Yakkasaroy</td>
+                            <td>22-iyun</td>
+                            <td><span class="status done">Hal qilindi</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 35 -->
+                        <tr>
+                            <td class="id">YF-1234</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/curb,damage,road?lock=35"
+                                    alt="Chegara toshi"></td>
+                            <td class="problem">Chegara toshi</td>
+                            <td class="address">Afrosiyob ko'chasi, 44-uy</td>
+                            <td>Olmazor</td>
+                            <td>21-iyun</td>
+                            <td><span class="status rejected">Inobatga olinmadi</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 36 -->
+                        <tr>
+                            <td class="id">YF-1235</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/pothole,road?lock=36"
+                                    alt="Chuqur"></td>
+                            <td class="problem">Chuqur</td>
+                            <td class="address">Nukus ko'chasi, 45-uy</td>
+                            <td>Shayxontohur</td>
+                            <td>20-iyun</td>
+                            <td><span class="status new">Yangi</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 37 -->
+                        <tr>
+                            <td class="id">YF-1236</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/cracked,road?lock=37"
+                                    alt="Notekislik"></td>
+                            <td class="problem">Notekislik</td>
+                            <td class="address">Amir Temur ko'chasi, 46-uy</td>
+                            <td>Yakkasaroy</td>
+                            <td>19-iyun</td>
+                            <td><span class="status viewing">Ko'rilmoqda</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 38 -->
+                        <tr>
+                            <td class="id">YF-1237</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/broken,asphalt?lock=38"
+                                    alt="Singan asfalt"></td>
+                            <td class="problem">Singan asfalt</td>
+                            <td class="address">Bunyodkor shoh ko'chasi, 47-uy</td>
+                            <td>Olmazor</td>
+                            <td>18-iyun</td>
+                            <td><span class="status process">Jarayonda</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 39 -->
+                        <tr>
+                            <td class="id">YF-1238</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/flooded,street?lock=39"
+                                    alt="Suv to'planishi"></td>
+                            <td class="problem">Suv to'planishi</td>
+                            <td class="address">Mustaqillik ko'chasi, 48-uy</td>
+                            <td>Sergeli</td>
+                            <td>17-iyun</td>
+                            <td><span class="status done">Hal qilindi</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 40 -->
+                        <tr>
+                            <td class="id">YF-1239</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/road,curb?lock=40"
+                                    alt="Chegara toshi"></td>
+                            <td class="problem">Chegara toshi</td>
+                            <td class="address">Navoiy ko'chasi, 49-uy</td>
+                            <td>Yashnobod</td>
+                            <td>16-iyun</td>
+                            <td><span class="status rejected">Inobatga olinmadi</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 41 -->
+                        <tr>
+                            <td class="id">YF-1240</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/pothole,street?lock=41"
+                                    alt="Chuqur"></td>
+                            <td class="problem">Chuqur</td>
+                            <td class="address">Shota Rustaveli, 50-uy</td>
+                            <td>Chilonzor</td>
+                            <td>15-iyun</td>
+                            <td><span class="status new">Yangi</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                        <!-- 42 -->
+                        <tr>
+                            <td class="id">YF-1241</td>
+                            <td><img class="report-img" src="https://loremflickr.com/120/80/uneven,road?lock=42"
+                                    alt="Notekislik"></td>
+                            <td class="problem">Notekislik</td>
+                            <td class="address">Nukus ko'chasi, 51-uy</td>
+                            <td>Yunusobod</td>
+                            <td>14-iyun</td>
+                            <td><span class="status viewing">Ko'rilmoqda</span></td>
+                            <td><a class="details" href="#">Batafsil</a></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <div class="table-footer">
+
+                    <span>42 ta yozuv ko'rsatilmoqda</span>
+
+                    <div class="pagination">
+                        <button class="page">Oldingi</button>
+                        <button class="page active">1</button>
+                        <button class="page">2</button>
+                        <button class="page">3</button>
+                        <button class="page">Keyingi</button>
+                    </div>
                 </div>
             </div>
         </div>
