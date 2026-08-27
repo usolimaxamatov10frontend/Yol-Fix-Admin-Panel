@@ -287,7 +287,7 @@ body {
 
 .nav-item {
     text-decoration: none;
-    color: #999999;
+    color: white;
     height: 42px;
     border-radius: var(--radius-md);
     display: flex;
