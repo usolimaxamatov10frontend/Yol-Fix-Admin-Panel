@@ -165,15 +165,6 @@ body {
     --header-h: 68px;
 }
 
-body {
-    background-color: var(--body-bg);
-    color: var(--text-white);
-    min-height: 100vh;
-    display: flex;
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-}
-
 /* ========================================================
    2. SIDEBAR & MOBILE OVERLAY
 ======================================================== */
@@ -656,13 +647,6 @@ h1 {
     unicode-bidi: isolate;
 }
 
-body {
-    background-color: var(--color-background);
-    color: var(--color-foreground);
-    font-family: var(--font-sans);
-    -webkit-font-smoothing: antialiased;
-}
-
 html,
 :host {
     -webkit-text-size-adjust: 100%;
@@ -1022,7 +1006,7 @@ tbody tr:last-child td {
 
 @media (max-width: 400px) {
 
-    .filter {
+    .  {
         padding: 10px;
     }
 

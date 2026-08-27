@@ -50,7 +50,7 @@
                     </svg>
                     <span>Bosh panel</span>
                 </a>
-                <a href="murojatlar.html" class="nav-item active">
+                <a href="murojatlar.html" class="nav-item">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-inbox h-4 w-4" aria-hidden="true">
@@ -61,7 +61,7 @@
                     </svg>
                     <span>Murojaatlar</span>
                 </a>
-                <a href="#" class="nav-item">
+                <a href="#" class="nav-item active">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-chart-column h-4 w-4" aria-hidden="true">
@@ -142,6 +142,271 @@
             </div>
         </header>
 
+        <div class="div flex-1 px-4 md:px-8 py-6 md:py-8">
+            <div class="content">
+                <div class="mb-6 md:mb-8">
+                    <h1 class="text-2xl md:text-3xl font-bold tracking-tight">Statistika va hisobotlar</h1>
+                    <p class="mt-1 text-sm text-muted-foreground">To'liq analitika va eksport</p>
+                </div>
+
+                <div class="content-btn flex gap-3">
+                    <button class="export-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5"
+                                d="M12.074 3.25v12.478M6.19 10.465l4.822 4.822c.293.293.677.44 1.06.44m5.883-5.262l-4.822 4.822c-.293.293-.677.44-1.06.44m8.677.788v.935a3.3 3.3 0 0 1-3.3 3.3H6.55a3.3 3.3 0 0 1-3.3-3.3v-.935" />
+                        </svg>CSV eksport</button>
+                    <button class="export-btn2"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                            viewBox="0 0 32 32">
+                            <g fill="currentColor">
+                                <path d="M8 18h16v2H8zm0-5h9v2H8zm0 10h16v2H8z" class="ouiIcon__fillSecondary" />
+                                <path
+                                    d="M21.41 0H5a3 3 0 0 0-3 3v26a3 3 0 0 0 3 3h22a3 3 0 0 0 3-3V8.59zM22 3.41L26.59 8H22zM27 30H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h15v8h8v19a1 1 0 0 1-1 1" />
+                            </g>
+                        </svg> PDF hisobot</button>
+                </div>
+            </div>
+
+            <div class="dashboard-grid">
+
+                <!-- Tumanlar bo'yicha taqsimot -->
+                <div class="chart-card district-card">
+
+                    <div class="card-header">
+                        <h3>Tuman bo‘yicha taqsimot</h3>
+                        <p>Barcha vaqt uchun</p>
+                    </div>
+
+                    <div class="district-list">
+
+                        <div class="district-item">
+                            <div class="district-info">
+                                <span>Chilonzor</span>
+                                <span>6</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 100%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="district-item">
+                            <div class="district-info">
+                                <span>Yunusobod</span>
+                                <span>6</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 100%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="district-item">
+                            <div class="district-info">
+                                <span>Mirzo Ulug‘bek</span>
+                                <span>5</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 83%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="district-item">
+                            <div class="district-info">
+                                <span>Shayxontohur</span>
+                                <span>5</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 83%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="district-item">
+                            <div class="district-info">
+                                <span>Yakkasaroy</span>
+                                <span>5</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 83%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="district-item">
+                            <div class="district-info">
+                                <span>Olmazor</span>
+                                <span>5</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 83%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="district-item">
+                            <div class="district-info">
+                                <span>Sergeli</span>
+                                <span>5</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 83%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="district-item">
+                            <div class="district-info">
+                                <span>Yashnobod</span>
+                                <span>5</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 83%;"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Vaqt bo'yicha trend -->
+                <div class="chart-card trend-card">
+
+                    <div class="card-header">
+                        <h3>Vaqt bo‘yicha tendensiya</h3>
+                        <p>Oylik dinamika (2026)</p>
+                    </div>
+
+                    <div class="line-chart">
+
+                        <svg viewBox="0 0 1000 430" preserveAspectRatio="none" class="chart-svg">
+
+                            <!-- Gradient -->
+                            <defs>
+                                <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#ff6b00" stop-opacity=".45" />
+
+                                    <stop offset="100%" stop-color="#ff6b00" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+
+
+                            <!-- Grafik ostidagi rang -->
+                            <path class="chart-area" d="
+                    M 0 220
+                    L 91 196
+                    L 182 144
+                    L 273 106
+                    L 364 80
+                    L 455 45
+                    L 546 0
+                    L 637 28
+                    L 728 82
+                    L 819 122
+                    L 910 178
+                    L 1000 205
+                    L 1000 330
+                    L 0 330
+                    Z
+                    "></path>
+
+
+                            <!-- Asosiy chiziq -->
+                            <polyline class="chart-line" points="
+                    0,220
+                    91,196
+                    182,144
+                    273,106
+                    364,80
+                    455,45
+                    546,0
+                    637,28
+                    728,82
+                    819,122
+                    910,178
+                    1000,205
+                    "></polyline>
+
+
+                            <!-- Nuqtalar -->
+                            <circle cx="0" cy="220" r="5"></circle>
+                            <circle cx="91" cy="196" r="5"></circle>
+                            <circle cx="182" cy="144" r="5"></circle>
+                            <circle cx="273" cy="106" r="5"></circle>
+                            <circle cx="364" cy="80" r="5"></circle>
+                            <circle cx="455" cy="45" r="5"></circle>
+                            <circle cx="546" cy="0" r="5"></circle>
+                            <circle cx="637" cy="28" r="5"></circle>
+                            <circle cx="728" cy="82" r="5"></circle>
+                            <circle cx="819" cy="122" r="5"></circle>
+                            <circle cx="910" cy="178" r="5"></circle>
+                            <circle cx="1000" cy="205" r="5"></circle>
+
+                        </svg>
+
+
+                        <!-- Oylar -->
+                        <div class="months">
+
+                            <span>Yan</span>
+                            <span>Fev</span>
+                            <span>Mar</span>
+                            <span>Apr</span>
+                            <span>May</span>
+                            <span>Iyn</span>
+                            <span>Iyul</span>
+                            <span>Avg</span>
+                            <span>Sen</span>
+                            <span>Okt</span>
+                            <span>Noy</span>
+                            <span>Dek</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <section class="summary-card">
+
+                <h2>Muammo turlari bo‘yicha xulosa</h2>
+
+                <div class="summary-grid">
+
+                    <!-- Chuqur -->
+                    <div class="summary-item">
+                        <span class="summary-name">Chuqur</span>
+                        <strong class="summary-number orange">225+</strong>
+                        <span class="summary-label">jami murojaat</span>
+                    </div>
+
+                    <!-- Notekislik -->
+                    <div class="summary-item">
+                        <span class="summary-name">Notekislik</span>
+                        <strong class="summary-number green">225+</strong>
+                        <span class="summary-label">jami murojaat</span>
+                    </div>
+
+                    <!-- Singan asfalt -->
+                    <div class="summary-item">
+                        <span class="summary-name">Singan asfalt</span>
+                        <strong class="summary-number yellow">200+</strong>
+                        <span class="summary-label">jami murojaat</span>
+                    </div>
+
+                    <!-- Suv to'planishi -->
+                    <div class="summary-item">
+                        <span class="summary-name">Suv to'planishi</span>
+                        <strong class="summary-number blue">200+</strong>
+                        <span class="summary-label">jami murojaat</span>
+                    </div>
+
+                    <!-- Chegara toshi -->
+                    <div class="summary-item">
+                        <span class="summary-name">Chegara toshi</span>
+                        <strong class="summary-number red">200+</strong>
+                        <span class="summary-label">jami murojaat</span>
+                    </div>
+                </div>
+
+            </section>
         </div>
     </main>
 
