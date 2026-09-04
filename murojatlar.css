@@ -669,9 +669,11 @@ html,
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, #0000001a), 0 1px 2px -1px var(--tw-shadow-color, #0000001a);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     background-color: var(--card-bg);
+    border: solid 1px var(--border-color);
 }
 
 .filter-item {
+    border: solid 1px var(--border-color);
     background-color: color-mix(in oklab, var(--input) 40%, transparent);
     padding-right: calc(var(--spacing) * 3);
     padding-left: calc(var(--spacing) * 10);
@@ -1056,4 +1058,32 @@ tbody tr:last-child td {
         height: 38px;
         font-size: 11px;
     }
+}
+
+.qidiruv {
+    position: relative;
+    width: 330px;
+    height: 40px;
+}
+
+.qidiruv-belgi {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 18px;
+    height: 18px;
+}
+
+.qidiruv input {
+    width: 100%;
+    height: 100%;
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+
+.filter input{
+    outline-color: var(--primary-orange);
+    out
 }

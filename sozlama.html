@@ -142,7 +142,223 @@
             </div>
         </header>
         <div class="div flex-1 px-4 md:px-8 py-6 md:py-8">
+            <!-- PAGE HEADER -->
+            <div class="settings-header">
+                <h1>Sozlamalar</h1>
+                <p>Profil va tizim sozlamalari</p>
+            </div>
+            <div class="headerr">
+                <nav class="space-y-1" style="margin-bottom: 30px;"><button
+                        class="activve w-full flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-user h-4 w-4" aria-hidden="true">
+                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg> Profil</button><button
+                        class="w-full flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm hover:bg-accent"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-bell h-4 w-4" aria-hidden="true">
+                            <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
+                            <path
+                                d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326">
+                            </path>
+                        </svg> Bildirishnomalar</button><button
+                        class="w-full flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm hover:bg-accent"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-lock h-4 w-4" aria-hidden="true">
+                            <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg> Xavfsizlik</button><button
+                        class="w-full flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm hover:bg-accent"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-globe h-4 w-4" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                            <path d="M2 12h20"></path>
+                        </svg> Tizim</button></nav>
 
+
+                <!-- ================= PROFIL ================= -->
+
+                <div class="profilll">
+                    <section class="settings-card">
+
+                        <div class="settings-title">
+                            <h2>Profil ma'lumotlari</h2>
+                            <p>Sizning admin profilingiz</p>
+                        </div>
+
+
+                        <!-- PROFILE -->
+                        <div class="profile-box">
+
+                            <div class="avatar">
+                                AT
+                            </div>
+
+                            <div class="profile-photo-info">
+                                <button type="button">
+                                    Rasmni o'zgartirish
+                                </button>
+
+                                <span>PNG, JPG (max 2MB)</span>
+                            </div>
+
+                        </div>
+
+
+                        <!-- INPUTS -->
+                        <div class="settings-form">
+
+                            <div class="input-box">
+                                <label>To'liq ism</label>
+
+                                <input type="text" value="Alisher Toshmatov">
+                            </div>
+
+
+                            <div class="input-box">
+                                <label>Email</label>
+
+                                <input type="email" value="alisher@yolfix.uz">
+                            </div>
+
+
+                            <div class="input-box">
+                                <label>Telefon</label>
+
+                                <input type="text" value="+998 90 123 45 67">
+                            </div>
+
+
+                            <div class="input-box">
+                                <label>Lavozim</label>
+
+                                <input type="text" value="Super Admin">
+                            </div>
+
+                        </div>
+
+
+                        <button class="save-btn">
+                            Saqlash
+                        </button>
+
+                    </section>
+
+
+
+                    <!-- ================= BILDIRISHNOMALAR ================= -->
+
+                    <section class="settings-card notification-card">
+
+                        <div class="settings-title">
+                            <h2>Bildirishnoma sozlamalari</h2>
+                            <p>Qachon xabar olishni tanlang</p>
+                        </div>
+
+
+                        <div class="notification-list">
+
+                            <!-- ITEM -->
+                            <div class="notification-item">
+
+                                <span>Yangi murojaat kelganda</span>
+
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+
+                            </div>
+
+
+                            <!-- ITEM -->
+                            <div class="notification-item">
+
+                                <span>Murojaat holati o'zgarganda</span>
+
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+
+                            </div>
+
+
+                            <!-- ITEM -->
+                            <div class="notification-item">
+
+                                <span>Kundlik hisobot</span>
+
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+
+                            </div>
+
+
+                            <!-- ITEM -->
+                            <div class="notification-item">
+
+                                <span>Haftalik xulosa (email)</span>
+
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- ================= TIZIM ================= -->
+
+                    <section class="settings-card system-card">
+
+                        <div class="settings-title">
+                            <h2>Tizim sozlamalari</h2>
+                            <p>Umumiy platforma sozlamalari</p>
+                        </div>
+
+
+                        <div class="settings-form">
+
+                            <div class="input-box">
+
+                                <label>Standart javob vaqti (soat)</label>
+
+                                <input type="number" value="48">
+
+                            </div>
+
+
+                            <div class="input-box">
+
+                                <label>Til</label>
+
+                                <select>
+                                    <option>O'zbek</option>
+                                    <option>Русский</option>
+                                    <option>English</option>
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+                </div>
+            </div>
         </div>
     </main>
     <script>

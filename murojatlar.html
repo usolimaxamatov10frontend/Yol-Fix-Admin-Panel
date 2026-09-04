@@ -148,43 +148,48 @@
                 <p class="mt-1 text-sm text-muted-foreground">Jami 42 ta murojaat topildi</p>
             </div>
 
-            <div class="filter rounded-2xl border border-border bg-card p-4 mb-6 shadow-sm">
+            <div class="filter rounded-2xl bg-card p-4 mb-6 shadow-sm">
                 <div class="flex flex-wrap items-center gap-3">
-                    <div class="relative flex-1 min-w-[220px]"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-search absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground"
+                    <div class="qidiruv relative flex-1 min-w-[220px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="qidiruv-belgi lucide lucide-search absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground"
                             aria-hidden="true">
                             <path d="m21 21-4.34-4.34"></path>
                             <circle cx="11" cy="11" r="8"></circle>
-                        </svg><input placeholder="ID yoki manzil bo'yicha qidirish..."
-                            class="filter-item w-full h-10 rounded-lg border border-input bg-input/40 pl-10 pr-3 text-sm focus:outline-none focus:ring-2 focus:ring-ring/50"
-                            value=""></div><select
-                        class="filter-item filter-input h-10 rounded-lg border border-input bg-input/40 px-3 text-sm">
+                        </svg>
+                        <input placeholder="ID yoki manzil bo'yicha qidirish..."
+                            class="filter-item w-full h-10 rounded-lg  bg-input/40 pl-10 pr-3 text-sm focus:outline-none"
+                            value="">
+                    </div>
+                    <select class="filter-item filter-input h-10 rounded-lg border-input bg-input/40 px-3 text-sm">
                         <option value="all">Barcha holatlar</option>
                         <option value="yangi">Yangi</option>
                         <option value="korilmoqda">Ko'rilmoqda</option>
                         <option value="jarayonda">Jarayonda</option>
                         <option value="hal_qilindi">Hal qilindi</option>
                         <option value="inobatga_olinmadi">Inobatga olinmadi</option>
-                    </select><select class="filter-item h-10 rounded-lg border border-input bg-input/40 px-3 text-sm">
+                    </select>
+                    <select class="filter-item h-10 rounded-lg border-input bg-input/40 px-3 text-sm">
                         <option value="all">Barcha turlar</option>
                         <option value="chuqur">Chuqur</option>
                         <option value="notekislik">Notekislik</option>
                         <option value="singan_asfalt">Singan asfalt</option>
                         <option value="suv_toplanishi">Suv to'planishi</option>
                         <option value="chegara_toshi">Chegara toshi</option>
-                    </select><button
-                        class=" h-10 px-4 rounded-lg border border-input hover:bg-accent inline-flex items-center gap-2 text-sm"><svg
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    </select>
+                    <button
+                        class="filter-item h-10 px-4 rounded-lg border-input hover:bg-accent inline-flex items-center gap-2 text-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-funnel h-4 w-4" aria-hidden="true">
                             <path
                                 d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z">
                             </path>
-                        </svg> Sana oralig'i</button><button
-                        class="filter-btn h-10 px-4 rounded-lg text-primary-foreground hover:bg-primary/90 inline-flex items-center gap-2 text-sm font-medium"><svg
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        </svg> Sana oralig'i</button>
+                    <button
+                        class="filter-btn h-10 px-4 rounded-lg text-primary-foreground hover:bg-primary/90 inline-flex items-center gap-2 text-sm font-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-download h-4 w-4" aria-hidden="true">
                             <path d="M12 15V3"></path>
